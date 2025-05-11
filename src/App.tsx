@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import PujaUnveiled from "./pages/PujaUnveiled";
 import ParaShowcase from "./pages/ParaShowcase";
+import ParaDetail from "./pages/ParaDetail";
 import Gallery from "./pages/Gallery";
 import PujaSchedule from "./pages/PujaSchedule";
 import VisitorsGuide from "./pages/VisitorsGuide";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/puja-unveiled" element={<PujaUnveiled />} />
           <Route path="/para-showcase" element={<ParaShowcase />} />
+          <Route path="/para/:paraId" element={<ParaDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/puja-schedule" element={<PujaSchedule />} />
           <Route path="/visitors-guide" element={<VisitorsGuide />} />
