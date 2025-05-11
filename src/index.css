@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 37 100% 98%;
+    --background: 195 90% 95%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -16,10 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 20 90% 50%;
-    --primary-foreground: 40 30% 96%;
+    --primary: 196 94% 48%;
+    --primary-foreground: 195 100% 95%;
 
-    --secondary: 51 100% 90%;
+    --secondary: 151 55% 41%;
     --secondary-foreground: 240 5.9% 10%;
 
     --muted: 240 4.8% 95.9%;
@@ -31,13 +31,13 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 37 15% 80%;
+    --border: 210 40% 80%;
     --input: 240 5.9% 90%;
-    --ring: 24 75% 50%;
+    --ring: 196 94% 48%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 195 90% 95%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -57,10 +57,10 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 20 90% 50%;
-    --primary-foreground: 40 30% 96%;
+    --primary: 196 94% 48%;
+    --primary-foreground: 195 100% 95%;
 
-    --secondary: 51 100% 90%;
+    --secondary: 151 55% 41%;
     --secondary-foreground: 240 5.9% 10%;
 
     --muted: 240 3.7% 15.9%;
@@ -74,7 +74,7 @@
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 24 75% 50%;
+    --ring: 196 94% 48%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -105,21 +105,22 @@
 
   .typewriter-text::before {
     content: '';
-    @apply absolute top-0 right-0 h-full w-[0.125em] bg-saffron-dark;
+    @apply absolute top-0 right-0 h-full w-[0.125em] bg-festival-blue-dark;
     animation: typewriter 4s steps(40) forwards, blink 1s step-end infinite;
   }
 
   .section-heading {
-    @apply font-heading text-3xl md:text-4xl lg:text-5xl text-indigo-dark dark:text-cream mb-6 relative;
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl text-festival-blue dark:text-cream mb-6 relative;
   }
   
   .section-heading::after {
     content: '';
-    @apply block w-16 h-1 mt-2 bg-saffron;
+    @apply block w-16 h-1 mt-2 bg-festival-red;
   }
   
-  .golden-glow {
-    text-shadow: 0 0 5px rgba(253, 224, 71, 0.7), 0 0 10px rgba(253, 224, 71, 0.5);
+  .colorful-glow {
+    text-shadow: 0 0 5px rgba(14, 165, 233, 0.7), 0 0 10px rgba(16, 185, 129, 0.5);
+    @apply animate-color-shift;
   }
   
   .fancy-underline {
@@ -128,7 +129,7 @@
   
   .fancy-underline::after {
     content: '';
-    @apply absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-saffron via-auspicious to-saffron scale-x-0 transition-transform duration-300 origin-bottom-left;
+    @apply absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-festival-blue via-festival-red to-festival-green scale-x-0 transition-transform duration-300 origin-bottom-left;
   }
   
   .fancy-underline:hover::after {
@@ -137,19 +138,19 @@
   
   .golden-particle {
     @apply absolute rounded-full pointer-events-none opacity-0;
-    background: radial-gradient(circle, rgba(253, 224, 71, 1) 0%, rgba(253, 186, 116, 0) 70%);
+    background: radial-gradient(circle, rgba(14, 165, 233, 1) 0%, rgba(16, 185, 129, 0.7) 50%, rgba(234, 56, 76, 0) 100%);
   }
   
   .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-b from-indigo/30 via-transparent to-indigo/70 z-10;
+    @apply absolute inset-0 bg-gradient-to-b from-festival-blue/30 via-transparent to-festival-blue/70 z-10;
   }
   
   .countdown-item {
-    @apply flex flex-col items-center justify-center bg-cream p-3 md:p-4 rounded-lg shadow-md border border-saffron/20;
+    @apply flex flex-col items-center justify-center bg-cream p-3 md:p-4 rounded-lg shadow-md border border-festival-green/30;
   }
   
   .countdown-number {
-    @apply text-2xl md:text-3xl font-heading font-bold text-saffron;
+    @apply text-2xl md:text-3xl font-heading font-bold text-festival-blue;
   }
   
   .countdown-label {
@@ -157,14 +158,22 @@
   }
   
   .navigation-tile {
-    @apply relative overflow-hidden rounded-xl bg-gradient-to-br from-cream to-marigold border-2 border-saffron/20 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] flex flex-col items-center justify-center p-4 md:p-6 text-center;
+    @apply relative overflow-hidden rounded-xl bg-gradient-to-br from-cream to-white border-2 border-festival-blue/20 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] flex flex-col items-center justify-center p-4 md:p-6 text-center;
   }
   
   .navigation-tile-icon {
-    @apply text-saffron mb-3 text-5xl transition-transform duration-300;
+    @apply text-festival-green mb-3 text-5xl transition-transform duration-300;
   }
   
   .navigation-tile:hover .navigation-tile-icon {
     @apply transform scale-110;
+  }
+
+  .rainbow-border {
+    @apply border-2 border-transparent;
+    background-image: linear-gradient(white, white), 
+      linear-gradient(90deg, #0EA5E9, #10B981, #ea384c, #0EA5E9);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
 }

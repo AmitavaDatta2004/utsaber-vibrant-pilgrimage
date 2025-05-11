@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,35 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Sacred Vibrancy color palette
+				// Updated color palette with blue, green, and red
+				festival: {
+					blue: {
+						DEFAULT: "#0EA5E9", // ocean blue
+						light: "#7DD3FC",
+						dark: "#0369A1",
+					},
+					green: {
+						DEFAULT: "#10B981", // emerald green
+						light: "#A7F3D0",
+						dark: "#047857",
+					},
+					red: {
+						DEFAULT: "#ea384c", // auspicious red
+						light: "#f87171",
+						dark: "#b91c1c",
+					},
+					cream: {
+						DEFAULT: "#fefbf6", // serene cream
+						light: "#ffffff",
+						dark: "#f5f5f4",
+					},
+					indigo: {
+						DEFAULT: "#1A1F2C", // mystical indigo (night)
+						light: "#394160",
+						dark: "#0f1218",
+					}
+				},
+				// Keep the existing color palette as well
 				saffron: {
 					DEFAULT: "#F97316", // deep saffron
 					light: "#FDBA74",
@@ -139,6 +166,12 @@ export default {
 				'marquee': {
 					'0%': { transform: 'translateX(0)' },
 					'100%': { transform: 'translateX(-50%)' }
+				},
+				'color-shift': {
+					'0%': { color: '#0EA5E9' },
+					'33%': { color: '#10B981' },
+					'66%': { color: '#ea384c' },
+					'100%': { color: '#0EA5E9' }
 				}
 			},
 			animation: {
@@ -150,7 +183,8 @@ export default {
 				'typewriter': 'typewriter 4s steps(40) forwards',
 				'blink': 'blink 1s step-end infinite',
 				'pulse-gold': 'pulse-gold 2s infinite',
-				'floating-particles': 'floating-particles 5s linear infinite'
+				'floating-particles': 'floating-particles 5s linear infinite',
+				'color-shift': 'color-shift 8s infinite'
 			}
 		}
 	},

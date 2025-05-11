@@ -26,7 +26,7 @@ const PujaUnveiled = () => {
           
           <main className="flex-grow pt-20">
             {/* Hero Section */}
-            <section className="relative py-20 bg-indigo">
+            <section className="relative py-20 bg-festival-blue">
               <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                   <h1 className="font-heading text-4xl md:text-5xl text-cream mb-6">Divine Mother Jagadhatri</h1>
@@ -61,8 +61,8 @@ const PujaUnveiled = () => {
                       Chandannagar holds a special connection to Jagadhatri Puja, with celebrations dating back centuries. The festival's grandeur in this former French colony is unparalleled, featuring magnificent idols, elaborate pandals, and spectacular lighting arrangements that have become cultural signatures of the region.
                     </p>
                     
-                    <div className="mt-10 p-6 bg-marigold/30 rounded-xl border border-saffron/20">
-                      <h3 className="font-heading text-xl mb-4 text-indigo">Sacred Mantra</h3>
+                    <div className="mt-10 p-6 bg-festival-green/10 rounded-xl border border-festival-blue/20">
+                      <h3 className="font-heading text-xl mb-4 text-festival-blue">Sacred Mantra</h3>
                       <p className="italic text-indigo-light mb-3">
                         "Om Jagadhatryai Namaha"
                       </p>

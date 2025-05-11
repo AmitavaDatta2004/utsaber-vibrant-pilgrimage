@@ -29,18 +29,18 @@ const Header = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <span className={`font-heading font-bold text-2xl md:text-3xl ${isScrolled ? 'text-saffron' : 'text-cream golden-glow'}`}>
+          <span className={`font-heading font-bold text-2xl md:text-3xl ${isScrolled ? 'text-festival-blue' : 'text-cream colorful-glow'}`}>
             Utsab Unites
           </span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {navigationItems.map((item) => (
+          {navigationItems.map((item, index) => (
             <Link 
               key={item.name} 
               to={item.path}
-              className={`fancy-underline font-medium ${isScrolled ? 'text-indigo' : 'text-cream'} hover:text-saffron transition-colors duration-300`}
+              className={`fancy-underline font-medium ${isScrolled ? 'text-indigo' : 'text-cream'} hover:text-festival-red transition-colors duration-300`}
             >
               {item.name}
             </Link>
@@ -69,7 +69,7 @@ const Header = () => {
               <Link 
                 key={item.name} 
                 to={item.path}
-                className="text-indigo hover:text-saffron font-medium py-2 border-b border-saffron/10 transition-colors duration-300"
+                className="text-indigo hover:text-festival-green font-medium py-2 border-b border-festival-blue/10 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

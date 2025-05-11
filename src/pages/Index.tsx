@@ -77,7 +77,7 @@ const Index = () => {
             <GoldenParticles />
 
             <div className="container mx-auto px-4 relative z-20 text-center">
-              <h1 className="font-heading text-5xl md:text-7xl text-cream mb-4 golden-glow">
+              <h1 className="font-heading text-5xl md:text-7xl text-cream mb-4 colorful-glow">
                 Utsab Unites
               </h1>
               
@@ -90,7 +90,7 @@ const Index = () => {
               <div className="mt-12">
                 <Link 
                   to="/puja-unveiled" 
-                  className="px-8 py-3 bg-saffron text-cream font-medium rounded-md hover:bg-saffron-dark transition-colors shadow-lg hover:shadow-xl"
+                  className="px-8 py-3 bg-festival-red text-cream font-medium rounded-md hover:bg-festival-red-dark transition-colors shadow-lg hover:shadow-xl"
                 >
                   Begin Your Digital Pilgrimage
                 </Link>
@@ -117,7 +117,7 @@ const Index = () => {
           </section>
           
           {/* Explore the Utsab - Navigation Tiles */}
-          <section className="py-16 bg-gradient-to-b from-cream to-marigold/30">
+          <section className="py-16 bg-gradient-to-b from-cream to-white">
             <div className="container mx-auto px-4">
               <h2 className="section-heading text-center">Explore the Utsab</h2>
               <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -136,7 +136,7 @@ const Index = () => {
           </section>
           
           {/* Featured Para of the Week */}
-          <section className="py-16 bg-marigold/30">
+          <section className="py-16 bg-festival-blue/5">
             <div className="container mx-auto px-4">
               <h2 className="section-heading">Featured Para of the Week</h2>
               <div className="mt-10 max-w-3xl">
@@ -164,12 +164,12 @@ const Index = () => {
                   />
                 </div>
                 <div className="col-span-1 md:col-span-2">
-                  <h3 className="font-heading text-2xl mb-3 text-indigo">Master Craftsman Ramesh Kumar</h3>
+                  <h3 className="font-heading text-2xl mb-3 text-festival-blue">Master Craftsman Ramesh Kumar</h3>
                   <p className="text-lg font-medium mb-2 text-indigo-light">Lighting Designer & Installation Artist</p>
                   <p className="mb-6 text-indigo-light">"My passion is to create illuminations that tell a story. Each installation is a narrative woven with lights, bringing myths and traditions to life through modern technology."</p>
                   <Link 
                     to="/artisan/ramesh-kumar" 
-                    className="px-6 py-2 bg-saffron text-cream font-medium rounded-md hover:bg-saffron-dark transition-colors"
+                    className="px-6 py-2 bg-festival-green text-white font-medium rounded-md hover:bg-festival-green-dark transition-colors"
                   >
                     Meet the Artist
                   </Link>
@@ -179,10 +179,10 @@ const Index = () => {
           </section>
           
           {/* Mini-Map (Interactive) */}
-          <section className="py-16 bg-gradient-to-b from-cream to-marigold/30">
+          <section className="py-16 bg-gradient-to-b from-cream to-festival-blue/5">
             <div className="container mx-auto px-4">
               <h2 className="section-heading text-center">Interactive Mini-Map</h2>
-              <div className="mt-10 h-[400px] bg-indigo/5 rounded-xl border border-saffron/20 p-4 flex items-center justify-center">
+              <div className="mt-10 h-[400px] bg-indigo/5 rounded-xl rainbow-border p-4 flex items-center justify-center">
                 <p className="text-indigo-light">Interactive map will be available during the puja celebration</p>
               </div>
             </div>
