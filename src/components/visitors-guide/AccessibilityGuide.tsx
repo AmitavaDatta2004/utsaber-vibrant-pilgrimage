@@ -1,5 +1,5 @@
 
-import { Accessibility, Wheelchair, Clock } from 'lucide-react';
+import { Accessibility, AccessibilityIcon, Clock } from 'lucide-react';
 
 const AccessibilityGuide = () => {
   const accessiblePandals = [
@@ -100,7 +100,7 @@ const AccessibilityGuide = () => {
             
             <div className="space-y-3 mb-4">
               <div className="flex items-start gap-2">
-                <Wheelchair className="w-4 h-4 text-indigo-light mt-1 flex-shrink-0" />
+                <AccessibilityIcon className="w-4 h-4 text-indigo-light mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-sm font-medium text-indigo-light">Accessible Features:</p>
                   <ul className="list-disc pl-5 text-sm text-indigo-light">
