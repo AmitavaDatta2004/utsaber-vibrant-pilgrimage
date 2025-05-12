@@ -466,7 +466,7 @@ const ParaDetail = () => {
                             <div className="flex gap-4">
                               {para.socialMedia.facebook && (
                                 <a 
-                                  href={para.socialMedia.facebook} 
+                                  href={socialMedia?.facebook} 
                                   target="_blank" 
                                   rel="noopener noreferrer"
                                   className="bg-[#1877F2] text-white px-4 py-2 rounded-md hover:bg-[#1877F2]/90 transition-colors"
@@ -477,12 +477,12 @@ const ParaDetail = () => {
                               
                               {para.socialMedia.instagram && (
                                 <a 
-                                  href={para.socialMedia.instagram} 
+                                  href={socialMedia?.instagram} 
                                   target="_blank" 
                                   rel="noopener noreferrer"
                                   className="bg-[#E1306C] text-white px-4 py-2 rounded-md hover:bg-[#E1306C]/90 transition-colors"
                                 >
-                                  Instagram
+                                  <Instagram className="w-5 h-5" aria-label="Instagram" />
                                 </a>
                               )}
                             </div>

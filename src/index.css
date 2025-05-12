@@ -176,4 +176,102 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
+
+  /* Gallery specific styles */
+  .bg-pattern-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .image-card {
+    @apply relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300;
+  }
+
+  .image-card:hover .image-card-overlay {
+    @apply opacity-100;
+  }
+
+  .image-card:hover .image-card-img {
+    @apply scale-105;
+  }
+
+  .image-card-img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .image-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-indigo/80 via-indigo/20 to-transparent opacity-0 transition-opacity duration-300;
+  }
+
+  .image-card-content {
+    @apply absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300;
+  }
+}
+
+@keyframes typewriter {
+  to { left: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); }
+}
+
+@keyframes floating-particles {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(var(--random-x, 50px), var(--random-y, -50px));
+    opacity: 0;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes color-shift {
+  0% { color: #0EA5E9; }
+  33% { color: #10B981; }
+  66% { color: #ea384c; }
+  100% { color: #0EA5E9; }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0);
+  }
+  50% {
+    transform: scale(1.05) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1) translate(0);
+  }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.animate-floating-particles {
+  animation: floating-particles 15s linear infinite;
+}
+
+.animate-ken-burns {
+  animation: ken-burns 20s ease-in-out infinite alternate;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
 }
