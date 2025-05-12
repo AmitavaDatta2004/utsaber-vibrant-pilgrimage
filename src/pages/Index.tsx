@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Camera, Calendar, Map, Info, Clock, Users, Award } from 'lucide-react';
+import { BookOpen, Camera, Calendar, Map, Info, Clock, Users, Award, ArrowRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CountdownTimer from '../components/CountdownTimer';
