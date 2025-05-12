@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -89,11 +88,6 @@ export default {
 						DEFAULT: "#1A1F2C", // mystical indigo (night)
 						light: "#394160",
 						dark: "#0f1218",
-					},
-					gold: {
-						DEFAULT: "#F7B801", // rich gold
-						light: "#FFDB58",
-						dark: "#B8860B",
 					}
 				},
 				// Keep the existing color palette as well
@@ -178,32 +172,6 @@ export default {
 					'33%': { color: '#10B981' },
 					'66%': { color: '#ea384c' },
 					'100%': { color: '#0EA5E9' }
-				},
-				'ken-burns': {
-					'0%': { transform: 'scale(1) translate(0)' },
-					'50%': { transform: 'scale(1.05) translate(-1%, -1%)' },
-					'100%': { transform: 'scale(1) translate(0)' }
-				},
-				'slide-up': {
-					'from': { transform: 'translateY(100%)' },
-					'to': { transform: 'translateY(0)' }
-				},
-				'shimmer': {
-					'0%': { backgroundPosition: '-200% 0' },
-					'100%': { backgroundPosition: '200% 0' }
-				},
-				'rotate-glow': {
-					'0%': { 
-						transform: 'rotate(0deg)', 
-						boxShadow: '0 0 10px rgba(14, 165, 233, 0.7), 0 0 20px rgba(14, 165, 233, 0.5)' 
-					},
-					'50%': { 
-						boxShadow: '0 0 15px rgba(16, 185, 129, 0.7), 0 0 30px rgba(16, 185, 129, 0.5)' 
-					},
-					'100%': { 
-						transform: 'rotate(360deg)',
-						boxShadow: '0 0 10px rgba(14, 165, 233, 0.7), 0 0 20px rgba(14, 165, 233, 0.5)' 
-					}
 				}
 			},
 			animation: {
@@ -216,14 +184,7 @@ export default {
 				'blink': 'blink 1s step-end infinite',
 				'pulse-gold': 'pulse-gold 2s infinite',
 				'floating-particles': 'floating-particles 5s linear infinite',
-				'color-shift': 'color-shift 8s infinite',
-				'ken-burns': 'ken-burns 20s ease-in-out infinite alternate',
-				'slide-up': 'slide-up 0.3s ease-out forwards',
-				'shimmer': 'shimmer 3s ease-in-out infinite',
-				'rotate-glow': 'rotate-glow 10s linear infinite'
-			},
-			backgroundImage: {
-				'alpana-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzR2LTRoLTJ2NGgtNHYyaDR2NGgydi00aDR2LTJoLTR6bTAtMzBWMGgtMnY0aC00djJoNHY0aDJWNmg0VjRoLTR6TTYgMzR2LTRINHY0SDB2Mmg0djRoMnYtNGg0di0ySDZ6TTYgNFYwSDR2NEgwdjJoNHY0aDJWNmg0VjRINnoiLz48L2c+PC9nPjwvc3ZnPg==');"
+				'color-shift': 'color-shift 8s infinite'
 			}
 		}
 	},
