@@ -464,7 +464,7 @@ const ParaDetail = () => {
                             </div>
                             
                             <div className="flex gap-4">
-                              {para.socialMedia?.facebook && (
+                              {para.socialMedia.facebook && (
                                 <a 
                                   href={para.socialMedia.facebook} 
                                   target="_blank" 
@@ -475,7 +475,7 @@ const ParaDetail = () => {
                                 </a>
                               )}
                               
-                              {para.socialMedia?.instagram && (
+                              {para.socialMedia.instagram && (
                                 <a 
                                   href={para.socialMedia.instagram} 
                                   target="_blank" 
